@@ -55,7 +55,7 @@ class Hades():
                     if methods == "TCP":
                         Attack._TCP(ip, port, packets)
                     if methods == "UDP":
-                        Attack.UDP(ip, port, packets)
+                        Attack._UDP(ip, port, packets)
                     Log._sendWebhook("url", "Attack has been launched to: '{0}'".format(ip))
             else:
                 print(f"{_reset}Failed to launch attack.")
